@@ -1,5 +1,6 @@
 #include <algorithm>
 #include <array>
+#include <cmath>
 #include <fstream>
 #include <iomanip>
 #include <iostream>
@@ -24,7 +25,7 @@ int main() {
 
     std::fstream fileStream{ "file.txt", std::ios::out };
 
-    for (int i{0}; i < arraySize; ++i) {
+    for (size_t i{0}; i < arraySize; ++i) {
         const auto& n = numbers[i];
         const auto& sn = sinusOfNumbers[i];
 
